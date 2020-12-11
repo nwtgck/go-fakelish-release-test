@@ -41,9 +41,9 @@ release:
   disable: false
   prerelease: auto
   name_template: "{{.ProjectName}}-v{{.Version}}"
-# brews:
-#   - tap:
-#       owner: nwtgck
-#       name: homebrew-fakelish
-#     homepage: "https://github.com/nwtgck/go-fakelish"
-#     description: "Fake English word generator"
+brews:
+  - tap:
+      owner: nwtgck
+      name: homebrew-fakelish
+    homepage: "https://github.com/nwtgck/go-fakelish"
+    description: "Fake English word generator"

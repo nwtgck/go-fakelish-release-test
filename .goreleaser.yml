@@ -6,19 +6,19 @@ builds:
       - linux
       - windows
       - darwin
-    #   - freebsd
-    # goarch:
-    #   - amd64
-    #   - arm
-    #   - arm64
-    #   - 386
-    #   - ppc64le
-    #   - s390x
-    #   - mips64
-    #   - mips64le
-    # goarm:
-    #   - 6
-    #   - 7
+      - freebsd
+    goarch:
+      - amd64
+      - arm
+      - arm64
+      - 386
+      - ppc64le
+      - s390x
+      - mips64
+      - mips64le
+    goarm:
+      - 6
+      - 7
     main: ./main/main.go
 archives:
   - name_template: '{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}{{ if .Mips }}-{{ .Mips }}{{ end }}'
